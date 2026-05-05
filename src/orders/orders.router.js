@@ -6,7 +6,6 @@ router
   .route("/")
   .get(controller.list)
   .post(controller.create)
-  .get(controller.read)
   .all(methodNotAllowed);
 
 router
@@ -15,6 +14,5 @@ router
   .put(controller.update)
   .delete(controller.delete)
   .all(methodNotAllowed);
-// TODO: Implement the /orders routes needed to make the tests pass
 
 module.exports = router;
